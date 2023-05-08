@@ -1,0 +1,19 @@
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+*{
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url('./assets/Fonts/ProximaNova-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #007bff;
+  --main-font: 'ProximaNova-Regular';
+}
