@@ -1,8 +1,7 @@
-
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
-*{
+* {
   margin: 0;
 }
 
@@ -13,7 +12,40 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url('./assets/Fonts/Proxima-Nova-Extrabold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Caskaydia-Bold';
+  src: url('./assets/Fonts/CaskaydiaCoveNerdFont-Bold.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --primary-color: #007bff;
   --main-font: 'ProximaNova-Regular';
+  --heading-font: 'ProximaNova-Bold';
+  --special-font: 'Caskaydia-Bold'
+}
+
+button {
+  padding: 13px;
+  border-radius: 3px;
+  border: none;
+  min-width: max-content;
+  width: 200px;
+  font-size: 1.1rem;
+  font-family: var(--main-font);
+}
+
+@media screen and (max-width: 600px) {
+  button {
+    width: 150px;
+    padding: 7px
+  }
 }
