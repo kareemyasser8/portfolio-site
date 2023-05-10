@@ -15,4 +15,27 @@
     <i class="bi bi-github"></i>
     <i class="bi bi-linkedin"></i>
   </div>
+
+
+  <div class="menu-icon-container">
+    <div class="menu-circle-hover" *ngIf="toggleMenu" @fade>
+
+    </div>
+    <div class="small-nav-menu-icon" (click)="showMenu()">
+      <i class="bi bi-list"></i>
+    </div>
+  </div>
+
+
 </div>
+
+
+<div class="nav-menu" *ngIf="toggleMenu" @zippy @fade>
+  <li>Work</li>
+  <li>Resume</li>
+  <li>Contact</li>
+  <li>GitHub</li>
+  <li>Linked In</li>
+</div>
+
+<!-- @menuAnimation -->

@@ -27,7 +27,7 @@
 }
 
 :root {
-  --primary-color: #007bff;
+  --primary-color: rgba(0, 123, 255,1);
   --main-font: 'ProximaNova-Regular';
   --heading-font: 'ProximaNova-Bold';
   --special-font: 'Caskaydia-Bold'
@@ -41,6 +41,18 @@ button {
   width: 200px;
   font-size: 1.1rem;
   font-family: var(--main-font);
+}
+
+
+.fade-in{
+  opacity: 0;
+  transform: translateY(100%);
+  transition: 1.5s ease-out;
+}
+
+.appear{
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 @media screen and (max-width: 600px) {

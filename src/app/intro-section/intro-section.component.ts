@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AnimationService } from '../animation.service';
 
 @Component({
   selector: 'intro-section',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroSectionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private animationService: AnimationService) { }
 
   ngOnInit(): void {
+    this.animationService.onScrollAnimation();
   }
 
 }
+
+
