@@ -11,7 +11,7 @@ export class IntroSectionComponent implements OnInit {
   constructor(private animationService: AnimationService) { }
 
   ngOnInit(): void {
-    this.animationService.onScrollAnimation();
+    this.animationService.onScrollAnimation(".intro-container")
   }
 
 }

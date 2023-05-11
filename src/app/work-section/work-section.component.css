@@ -1,0 +1,33 @@
+.work-container {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: aliceblue;
+  /* border: 1px solid red; */
+  /* min-height: calc(100vh - 65px); */
+}
+
+.content{
+  /* margin-top: 5%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.content h1 {
+  font-family: var(--heading-font);
+  text-align: center;
+  font-size: var(--fs-xl);
+}
+
+.work-container p{
+  font-family: var(--main-font);
+  width: 80%;
+  font-size: var(--fs-m);
+}
+

@@ -1,10 +1,6 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
-* {
-  margin: 0;
-}
-
 @font-face {
   font-family: 'ProximaNova-Regular';
   src: url('./assets/Fonts/ProximaNova-Regular.otf') format('opentype');
@@ -30,7 +26,11 @@
   --primary-color: rgba(0, 123, 255,1);
   --main-font: 'ProximaNova-Regular';
   --heading-font: 'ProximaNova-Bold';
-  --special-font: 'Caskaydia-Bold'
+  --special-font: 'Caskaydia-Bold';
+
+  --fs-xl: clamp(1rem, 5vw + 1rem, 3.3rem);
+  --fs-m: clamp(1rem,1vw + 1rem,1.5rem);
+  --fs-s: 1.2rem;
 }
 
 button {
@@ -39,7 +39,7 @@ button {
   border: none;
   min-width: max-content;
   width: 200px;
-  font-size: 1.1rem;
+  font-size: var(--fs-s);
   font-family: var(--main-font);
 }
 
@@ -47,7 +47,7 @@ button {
 .fade-in{
   opacity: 0;
   transform: translateY(100%);
-  transition: 1.5s ease-out;
+  transition: 1s ease-out;
 }
 
 .appear{
@@ -56,6 +56,11 @@ button {
 }
 
 @media screen and (max-width: 600px) {
+
+  h1{
+    width: 80%;
+  }
+
   button {
     width: 150px;
     padding: 7px

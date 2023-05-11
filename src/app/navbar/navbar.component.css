@@ -45,8 +45,7 @@
   justify-content: center;
   height: 100%;
   cursor: pointer;
-
-  /* border: 1px solid red; */
+  font-size: var(--fs-s);
 }
 
 .tabs-section li:hover{
@@ -54,7 +53,6 @@
 }
 
 .links-section{
-  /* border:1px solid red; */
   gap: 20px;
   display: flex;
   width: 10%;
@@ -70,10 +68,6 @@
 .nav-menu{
   display: none;
 }
-
-
-
-
 
 @media screen and (max-width: 600px) {
 
@@ -98,7 +92,6 @@
     font-weight: 500;
     width: 93%;
     border-radius: 2px;
-
   }
 
   .nav-menu li:hover{
@@ -133,8 +126,6 @@
     border-radius: 50%;
     z-index: -1;
   }
-
-
 
   .small-nav-menu-icon i{
     margin-top: 5px;

@@ -1,32 +1,27 @@
 .intro-container {
   width: 100%;
-  /* height: 50vh; */
-  /* height: 100%; */
   padding: 10px;
-  background-color: white;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 65px);
+  /* border: 1px solid red; */
+  min-height: calc(100vh - 65px);
 }
 
 .content{
-  /* border: 1px solid red; */
-  /* height: 90%; */
+  margin-top: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-bottom: 100px;
+  padding: 20px;
 }
 
-h1 {
+.content h1 {
   font-family: var(--heading-font);
   text-align: center;
-  width: 80%;
+  font-size: var(--fs-xl);
 }
 
 h1 span{
@@ -36,8 +31,8 @@ h1 span{
 
 .intro-container p{
   font-family: var(--main-font);
-  width: 70%;
-  font-size: 1.1rem;
+  width: 80%;
+  font-size: var(--fs-m);
 }
 
 .btns{
@@ -49,10 +44,10 @@ h1 span{
 }
 
 @media screen and (max-width: 370px) {
+
   .btns{
     flex-direction: column;
     align-items: center;
-    /* border: 1px solid red; */
   }
 
   .content{

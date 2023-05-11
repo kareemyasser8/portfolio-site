@@ -7,22 +7,30 @@ export class AnimationService {
 
   constructor(){}
 
-  onScrollAnimation() {
-    let logos = document.querySelectorAll('.fade-in');
-    let options = {};
+  onScrollAnimation(targetClass) {
+
+
+    let section = document.querySelectorAll(".fade-in");
+    let options = {
+      root: document.querySelector(targetClass),
+      threshold: 0,
+      rootMargin: "0px 0px 0px 0px"
+    };
     let observer = new IntersectionObserver(
       (entries, observer) => {
         entries.forEach(entry => {
           if (!entry.isIntersecting) return
           else {
             entry.target.classList.add("appear");
+            // console.log(targetClass)
             observer.unobserve(entry.target)
           }
         })
-      }
+      },
+      options
     )
 
-    logos.forEach(logo=>{
+    section.forEach(logo=>{
       observer.observe(logo)
     })
 
