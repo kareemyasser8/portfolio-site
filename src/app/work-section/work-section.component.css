@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-color: aliceblue;
+  background-color: #edecec;
   /* border: 1px solid red; */
   /* min-height: calc(100vh - 65px); */
 }
@@ -27,7 +27,20 @@
 
 .work-container p{
   font-family: var(--main-font);
+  text-align: center;
   width: 80%;
   font-size: var(--fs-m);
 }
+
+.projects-container{
+  width: 85%;
+  /* padding:2%; */
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  justify-content: center;
+  /* border: 1px solid red; */
+  height: max-content;
+}
+
 

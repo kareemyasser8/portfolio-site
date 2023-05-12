@@ -1,0 +1,36 @@
+<div class="container">
+
+
+  <div class="image-section">
+    <div class="project-thumbnail">
+      <a [href]="projectInput.link" target="_blank"><img [src]="imagePath + projectInput.thumbnail" alt=""></a>
+    </div>
+  </div>
+
+  <div class="project-details">
+    <div class="project-title">
+      {{projectInput.title}}
+    </div>
+    <div class="project-description">
+      {{projectInput.description}}
+    </div>
+
+
+    <div class="project-technologies">
+      <div *ngFor="let t of projectInput.technologies">
+        <img [src]="imagePath + t + '.png'" alt={{t}} title="{{t}}" />
+      </div>
+    </div>
+
+
+    <div class="btns">
+      <a [href]="projectInput.githubLink" target="_blank">
+        <button class="github-btn"> <i class="bi bi-github"></i> Github</button>
+      </a>
+      <a [href]="projectInput.link" target="_blank">
+        <button class="preview-btn"> <i class="bi bi-eye-fill"></i> Preview</button>
+      </a>
+    </div>
+  </div>
+
+</div>

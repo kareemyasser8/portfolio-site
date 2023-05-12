@@ -2,5 +2,10 @@
   <div class="content">
     <h1>Work</h1>
    <p>Check out my projects, if you have any questions feel free to ask me for more information</p>
+
+   <div class="projects-container" *ngFor="let p of projects">
+    <project [projectInput]="p"></project>
+  </div>
+
   </div>
 </div>

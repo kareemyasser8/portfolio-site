@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AnimationService } from '../animation.service';
+import { projects } from '../projectsData';
 
 @Component({
   selector: 'work-section',
@@ -8,8 +8,9 @@ import { AnimationService } from '../animation.service';
 })
 export class WorkSectionComponent implements OnInit {
 
-  constructor(private animationService: AnimationService) { }
+  projects: any[] = projects
 
+  constructor() { }
 
   ngOnInit(): void {
 

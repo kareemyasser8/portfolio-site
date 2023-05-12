@@ -29,12 +29,13 @@
   --special-font: 'Caskaydia-Bold';
 
   --fs-xl: clamp(1rem, 5vw + 1rem, 3.3rem);
+  --fs-l: clamp(1rem,1vw + 1rem,1.5rem);
   --fs-m: clamp(1rem,1vw + 1rem,1.5rem);
   --fs-s: 1.2rem;
 }
 
 button {
-  padding: 13px;
+  padding: 9px;
   border-radius: 3px;
   border: none;
   min-width: max-content;
