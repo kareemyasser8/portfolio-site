@@ -7,6 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsSectionComponent implements OnInit {
 
+  skills: any[] = [
+    'Angular',
+    'TypeScript',
+    'JavaScript',
+    'HTML',
+    'CSS',
+    'SASS',
+    'Bootstrap',
+    'FireBase',
+    'Git',
+    'NodeJS',
+    'Node Express',
+    'MongoDB'
+  ]
+
+  imagePath = "../../assets/Images/"
+
   constructor() { }
 
   ngOnInit(): void {
