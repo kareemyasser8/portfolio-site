@@ -15,6 +15,10 @@
       {{projectInput.description}}
     </div>
 
+    <div *ngIf="projectInput.notes" class="project-note">
+        {{projectInput.notes}}
+    </div>
+
 
     <div class="project-technologies">
       <div *ngFor="let t of projectInput.technologies">

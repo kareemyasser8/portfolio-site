@@ -8,6 +8,7 @@ export const projects = [
     description: `Introducing a Twitter clone project that includes essential features such as CRUD operations and real-time notifications.
       With this project, you can create, read, update, and delete tweets just like the original Twitter platform.
        Additionally, you will receive prompt notifications when other users interact with your tweets by liking or commenting. `,
+    notes: '*This project takes 10 - 15 seconds to load data from the backend. please wait when you test it',
     technologies: [
       'Angular', 'TypeScript', 'HTML', 'CSS', 'Bootstrap', 'Mongo', 'Express', 'NodeJS'
     ]
