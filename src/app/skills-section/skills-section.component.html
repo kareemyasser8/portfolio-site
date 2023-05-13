@@ -1,22 +1,20 @@
 <div class="skills-container">
   <div class="content">
     <h1>Skills</h1>
-   <p>The following is a list of the frontend and the backend technologies with which I am familiar.</p>
+    <p>The following is a list of the frontend and the backend technologies with which I am familiar.</p>
 
-   <div class="technologies-container">
-        <div class="icons">
-          <div *ngFor="let skill of skills" class="icon-circle">
+    <div class="technologies-container">
+      <div class="icons">
+        <div class="icon-detail" *ngFor="let skill of skills">
+          <div class="icon-circle">
             <img [src]="imagePath + skill + '.png'" alt="">
           </div>
-      </div>
-
-      <div class="technologies">
-        <div *ngFor="let skill of skills" class="technology">
-          {{skill}}
+          <div>{{skill}}</div>
         </div>
       </div>
-   </div>
+
+
+    </div>
 
   </div>
 </div>
-
