@@ -51,8 +51,8 @@
   /* border: 1px solid red; */
 }
 
-.project-description:hover +.project-title{
-  color: red;
+.project-details:hover .project-title{
+  color: var(--primary-color);
 }
 
 .project-title {

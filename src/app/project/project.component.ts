@@ -13,7 +13,7 @@ export class ProjectComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log('projectInput:', this.projectInput);
+
   }
 
 }
