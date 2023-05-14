@@ -68,6 +68,15 @@
   align-items: center;
 }
 
+.links-section i{
+  color: rgba(0, 0, 0, 0.8)
+}
+
+.links-section i:hover{
+  cursor: pointer;
+  color: var(--primary-color)
+}
+
 .menu-icon-container{
   display: none;
 }

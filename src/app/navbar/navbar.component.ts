@@ -27,6 +27,11 @@ export class NavbarComponent implements OnInit {
     if(this.toggleMenu) this.toggleMenu = !this.toggleMenu;
   }
 
+  navigateToPage(url) {
+    window.open(url, '_blank');
+    if(this.toggleMenu) this.toggleMenu = !this.toggleMenu;
+  }
+
 
   ngOnInit(): void {
     const navbar = document.querySelector('.navbar-container');
