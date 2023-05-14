@@ -6,9 +6,9 @@
   </div>
 
   <div class="tabs-section">
-    <li>Work</li>
+    <li (click)="onClick('work')">Work</li>
     <li>Resume</li>
-    <li>Contact</li>
+    <li (click)="onClick('contact')">Contact</li>
   </div>
 
   <div class="links-section">
@@ -31,9 +31,9 @@
 
 
 <div class="nav-menu" *ngIf="toggleMenu" @zippy @fade>
-  <li>Work</li>
+  <li (click)="onClick('work')">Work</li>
   <li>Resume</li>
-  <li>Contact</li>
+  <li (click)="onClick('contact')">Contact</li>
   <li>GitHub</li>
   <li>Linked In</li>
 </div>

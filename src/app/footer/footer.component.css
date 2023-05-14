@@ -13,5 +13,6 @@
 
 .rights{
   text-align: center;
+  font-size: var(--fs-s);
   margin-bottom: 20px;
 }

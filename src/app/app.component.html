@@ -1,9 +1,12 @@
 <div class="main-page">
-  <navbar></navbar>
-  <intro-section></intro-section>
-  <work-section></work-section>
+  <navbar (linkClicked)="handleLinkClicked($event)"></navbar>
+  <intro-section (buttonClicked)="handleLinkClicked($event)"></intro-section>
+  <work-section id="work"></work-section>
   <skills-section></skills-section>
-  <contact-section></contact-section>
+  <contact-section id="contact"></contact-section>
   <footer></footer>
+  <div class="toTop" (click)="scrollToTop()" @fade>
+    <i class="bi bi-arrow-up"></i>
+  </div>
 </div>
 
