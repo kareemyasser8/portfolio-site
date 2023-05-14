@@ -5,18 +5,15 @@
   flex-direction: column;
   gap: 10px;
   background-color: #edecec;
-  /* border: 1px solid red; */
-  /* min-height: calc(100vh - 65px); */
 }
 
 .content{
-  /* margin-top: 5%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 20px;
+  padding: 20px 10px;
 }
 
 .content h1 {
@@ -37,6 +34,7 @@
   /* padding:2%; */
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap:10px;
   justify-content: center;
   /* border: 1px solid red; */

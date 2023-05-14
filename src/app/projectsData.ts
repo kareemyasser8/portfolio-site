@@ -43,7 +43,7 @@ export const projects = [
     link: 'https://celebrity-website.vercel.app/index.html',
     githubLink: 'https://github.com/kareemyasser8/Celebrity-website',
     title: 'Celebrity website',
-    description: `Welcome to the official website of Avril Lavigne, the renowned singer and songwriter! Our website is dedicated to providing you with the latest news, updates, and information about Avril Lavigne's life, career, and music.`,
+    description: `Welcome to the website which is dedicated to providing you with the latest news, updates, and information about Avril Lavigne's life, career, and music.`,
     technologies: [
       'HTML', 'CSS', 'JavaScript', 'JQuery'
     ]

@@ -1,0 +1,48 @@
+<div class="contact-container">
+  <div class="content">
+    <h1>Contact</h1>
+    <p>If you have any questions or would like to discuss a project, feel free to contact me.</p>
+
+    <div class="form-container">
+      <div *ngIf="isLoading" class="loading"></div>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()" class="form">
+        <div>
+          <label for="name">Name</label>
+          <input formControlName="name" type="text" name="name" id="name" autocomplete="off">
+        </div>
+
+        <div *ngIf="submitted && form.controls.name.invalid" class="error">
+          <span *ngIf="form.controls.name.errors?.['required']">*Name is required</span>
+          <span *ngIf="form.controls.name.errors?.['pattern']">*Name can't include special characters</span>
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input formControlName="email" type="email" name="email" id="email" autocomplete="off">
+        </div>
+
+        <div *ngIf="submitted && form.controls.email.invalid" class="error">
+          <span *ngIf="form.controls.email.errors?.['required']">*Email is required</span>
+          <span *ngIf="form.controls.email.errors?.['email']">*Email is invalid</span>
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea formControlName="message" id="message">
+          </textarea>
+
+          <div *ngIf="submitted && form.controls.message.invalid" class="error">
+            <span *ngIf="form.controls.message.errors?.['required']">*Message is required</span>
+          </div>
+        </div>
+
+        <button>Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <div><i class="bi bi-telephone"></i>  Phone: 01067566820</div>
+        <div><i class="bi bi-envelope"></i>  Email: Kareem.yasserr@gmail.com</div>
+      </div>
+    </div>
+  </div>
+</div>

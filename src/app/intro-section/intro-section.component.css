@@ -30,6 +30,7 @@ h1 span{
 }
 
 .intro-container p{
+  text-align: center;
   font-family: var(--main-font);
   width: 80%;
   font-size: var(--fs-m);

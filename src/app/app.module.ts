@@ -9,6 +9,10 @@ import { IntroSectionComponent } from './intro-section/intro-section.component';
 import { WorkSectionComponent } from './work-section/work-section.component';
 import { ProjectComponent } from './project/project.component';
 import { SkillsSectionComponent } from './skills-section/skills-section.component';
+import { ContactSectionComponent } from './contact-section/contact-section.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +22,16 @@ import { SkillsSectionComponent } from './skills-section/skills-section.componen
     WorkSectionComponent,
     ProjectComponent,
     SkillsSectionComponent,
+    ContactSectionComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
