@@ -28,8 +28,8 @@ export const projects = [
 
   {
     thumbnail: 'KYLandingPage.jpg',
-    link: 'https://kareemyasser8.github.io/KareemLandingPage/',
-    githubLink: 'https://kareem-landing-page-iqzq.vercel.app/',
+    link: 'https://kareem-landing-page-iqzq.vercel.app/',
+    githubLink: 'https://github.com/kareemyasser8/KareemLandingPage',
     title: 'Kareem Landing Page',
     description: `Welcome to my online portfolio, where I showcase my passion for graphic design! This website is dedicated to displaying my creative work and providing a glimpse into my design process`,
     technologies: [
