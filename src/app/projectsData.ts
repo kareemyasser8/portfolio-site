@@ -27,6 +27,17 @@ export const projects = [
   },
 
   {
+    thumbnail: 'RecipeBook.jpg',
+    link: 'https://recipe-book-ochre.vercel.app/auth',
+    githubLink: 'https://github.com/kareemyasser8/recipeBook',
+    title: 'Recipe Book',
+    description: `Introducing a recipe book website that allows users to add the recipes including the details like ingredients and also the description of the recipe. It let you add the ingredients to the shopping list where you can update, delete them.`,
+    technologies: [
+      'Angular', 'TypeScript', 'HTML', 'CSS', 'Bootstrap', 'FireBase',
+    ]
+  },
+
+  {
     thumbnail: 'KYLandingPage.jpg',
     link: 'https://kareem-landing-page-iqzq.vercel.app/',
     githubLink: 'https://github.com/kareemyasser8/KareemLandingPage',
@@ -42,7 +53,7 @@ export const projects = [
     thumbnail: 'Celebrity5.jpg',
     link: 'https://celebrity-website.vercel.app/index.html',
     githubLink: 'https://github.com/kareemyasser8/Celebrity-website',
-    title: 'Celebrity website',
+    title: 'Celebrity Website',
     description: `Welcome to the website which is dedicated to providing you with the latest news, updates, and information about Avril Lavigne's life, career, and music.`,
     technologies: [
       'HTML', 'CSS', 'JavaScript', 'JQuery'
